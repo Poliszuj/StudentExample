@@ -17,18 +17,22 @@ public class StudentExample {
      */
     public static void main(String[] args) {
        Scanner input = new Scanner(System.in);
-      Student[] students = new Student[5];
+      Student[] students = new Student[3];
 
       for(int i = 0; i < students.length; ++i) {
          System.out.println("Enter a name");
          String name = input.nextLine();
          students[i] = new Student(name);
       }
-
-      students[2].setAge(18);
-      Student[] var7 = students;
-      int var8 = students.length;
-
+      
+      for (int i = 0; i < students.length; ++i){
+        System.out.println("Enter an Age for: " + students[i].getName());
+        int age = input.nextInt();
+        students[i].setAge(age);
+      }
+        Student[] var7 = students;
+        int var8 = students.length;
+      
       for(int var5 = 0; var5 < var8; ++var5) {
          Student student = var7[var5];
          System.out.printf("Student %s is %d years old\n", student.getName(), student.getAge());
