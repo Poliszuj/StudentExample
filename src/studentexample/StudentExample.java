@@ -26,7 +26,7 @@ public class StudentExample {
       }
       
       for (int i = 0; i < students.length; ++i){
-        System.out.println("Enter an Age for: " + students[i].getName());
+        System.out.println("Enter an Age for " + students[i].getName());
         int age = input.nextInt();
         students[i].setAge(age);
       }
