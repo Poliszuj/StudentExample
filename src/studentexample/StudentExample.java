@@ -20,7 +20,7 @@ public class StudentExample {
       Student[] students = new Student[3];
 
       for(int i = 0; i < students.length; ++i) {
-         System.out.println("Enter a name");
+         System.out.println("Enter a name: ");
          String name = input.nextLine();
          students[i] = new Student(name);
       }
@@ -33,10 +33,13 @@ public class StudentExample {
         Student[] var7 = students;
         int var8 = students.length;
       
-      for(int var5 = 0; var5 < var8; ++var5) {
+      for (int var5 = 0; var5 < var8; ++var5) {
          Student student = var7[var5];
-         System.out.printf("Student %s is %d years old\n", student.getName(), student.getAge());
+         System.out.printf("The student %s is %d years old\n", student.getName(), student.getAge());
+   
       }
-    }
     
+      System.out.println("Pushed a small fix");
+    }
+  
 }
