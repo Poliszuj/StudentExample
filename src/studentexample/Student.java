@@ -5,8 +5,7 @@
 package studentexample;
 
 /**
- *
- * @author juanp
+ * @author juanp 10/7/2024
  */
 public class Student {
     private String name;
